@@ -1,0 +1,82 @@
+.main-showcase{
+    width: 100%;
+    font-family: $headerFont;
+    .showcase-parent{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        transform: translateY(20vh);
+        text-align: center;
+        p{
+            font-size: 25px;
+            line-height: 2;
+        }
+    .showcase-slogan{
+        h1{
+            font-size: 50px;
+        }
+    }
+    .showcase-form{
+        input{
+            height: 55px;
+            padding: 10px 10px 0;
+           width: 30rem;
+            outline: none;
+        }
+        display: flex;
+        label{
+            button{
+                background: $mainRed;
+                padding: 13px;
+                text-align: center;
+                color: white;
+                font-weight: 800;
+                font-size: 20px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+ }
+}
+
+@media only screen and (max-width:680px){
+    .showcase-form{
+        flex-direction: column;
+
+        button{
+            margin-top: 10px;
+        }
+    }
+    .main-showcase{
+        .showcase-parent{
+            transform: translateY(10vh);
+        }
+        p{
+            font-size: 17px !important;
+        }
+        h1{
+            font-size: 30px !important;
+        }
+    }
+}
+
+@media only screen and (max-width:525px){
+    .showcase-form{
+        input{
+            width: 15rem !important;
+            margin: auto;
+        }
+    }
+}
+@media only screen and (max-width:250px){
+    .showcase-form{
+        input{
+            width: 10rem !important;
+            margin: auto;
+        }
+    }
+}

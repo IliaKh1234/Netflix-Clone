@@ -1,0 +1,40 @@
+.dowloand-section{
+    width: 100%;
+    background: black;
+}
+.dowloand-parent{
+    display: flex;
+    justify-content: space-around;
+    img{
+        width: 100%;
+    }
+}
+.dowloand-title{
+    margin-top: 130px;
+    color: white;
+    font-family: $headerFont;
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:950px){
+    .dowloand-parent{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+    .dowloand-title{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width:300px){
+    .dowloand-parent{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
